@@ -20,7 +20,7 @@ mysql -u root -p database_name < "C:/path/to/your_file.sql"
 
 > **বাস্তব উদাহরণ:**
 > ```bash
-> mysql -u root -p spz < "C:/Users/Md Ashikur Rahman/Downloads/spzbd_soft_export.sql"
+> mysql -u root -p spz < "C:/Users/example/Downloads/database_name.sql"
 > ```
 > *(পাসওয়ার্ড চাইলে পাসওয়ার্ড দিন, আর ডিফল্ট ফাঁকা থাকলে সরাসরি `Enter` চাপুন)*
 
@@ -32,12 +32,12 @@ mysql -u root -p database_name < "C:/path/to/your_file.sql"
 
 #### ১. ডাটাবেজ সিলেক্ট করুন:
 ```sql
-USE spz;
+USE database_name;
 ```
 
 #### ২. ফাইল ইমপোর্ট করুন:
 ```sql
-source C:/Users/Md Ashikur Rahman/Downloads/spzbd_soft_export.sql;
+source C:/Users/example/Downloads/database_name.sql;
 ```
 
 *(Note: ফাইলের পাথে ব্যাকস্ল্যাশ `\` এর বদলে ফরোয়ার্ড স্ল্যাশ `/` ব্যবহার করবেন)*
